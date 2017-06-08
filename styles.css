@@ -1,0 +1,47 @@
+body {
+  background-image: url(https://s-media-cache-ak0.pinimg.com/564x/24/dd/12/24dd121cee0706cb4a9009df20fe4526.jpg);
+  background-size: cover;
+  font-family: monospace;
+
+}
+
+.page-heading {
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+}
+
+.container {
+  padding: 0 10%;
+}
+
+.grid-1 {
+  background-color: white;
+  border: 10px solid white;
+  display: grid;
+  grid-template-areas:
+  "grid-1__image"
+  "grid-1__text";
+  grid-gap: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .grid-1 {
+    grid-template-areas:
+    "grid-1__text grid-1__image";
+  }
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.grid-1__text {
+  grid-area: grid-1__text;
+}
+
+.grid-1__image {
+  grid-area: grid-1__image;
+}
