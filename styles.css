@@ -1,3 +1,9 @@
+/*GENERAL*/
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(https://s-media-cache-ak0.pinimg.com/564x/24/dd/12/24dd121cee0706cb4a9009df20fe4526.jpg);
   background-size: cover;
@@ -13,8 +19,15 @@ body {
 }
 
 .container {
-  padding: 0 10%;
+  padding: 0 5%;
 }
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+/*GRID SECTION 1 MODULE*/
 
 .grid-1 {
   background-color: white;
@@ -30,13 +43,11 @@ body {
   .grid-1 {
     grid-template-areas:
     "grid-1__text grid-1__image";
+    grid-template-columns: 60% 40%;
   }
 }
 
-.image {
-  display: block;
-  width: 100%;
-}
+
 
 .grid-1__text {
   grid-area: grid-1__text;
@@ -44,4 +55,8 @@ body {
 
 .grid-1__image {
   grid-area: grid-1__image;
+}
+
+.header {
+  font-size: 120px;
 }
